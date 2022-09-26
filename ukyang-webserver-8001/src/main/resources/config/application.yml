@@ -3,6 +3,8 @@ server:
 
 # Spring 配置
 spring:
+  application:
+    name: webserver8001
   # 数据源配置
   datasource:
     # mysql 服务器配置
@@ -64,3 +66,11 @@ logging:
     com.ukyang.server.mapper: error
   config:
     classpath:config/logback.xml
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8201/eureka,http://localhost:8202/eureka
