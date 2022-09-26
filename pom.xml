@@ -5,6 +5,7 @@
 
     <modules>
         <module>ukyang-webserver-8001</module>
+        <module>ukyang-eureka-8201</module>
     </modules>
 
     <groupId>com.ukyang</groupId>
